@@ -8,4 +8,4 @@ services:
     ports:
       - ${PORT}:${PORT}
     environment:
-      - 'OPENAI_API_KEY: ${OPENAI_API_KEY}'
+      OPENAI_API_KEY: ${OPENAI_API_KEY}

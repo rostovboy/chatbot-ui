@@ -6,11 +6,11 @@ services:
     ports:
       - ${PORT}:${PORT}
     environment:
-      - 'OPENAI_API_KEY: ${OPENAI_API_KEY}'
-      - 'VIRTUAL_HOST: ${VIRTUAL_HOST}'
-      - 'VIRTUAL_PORT: 3000'
-      - 'LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}'
-      - 'LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}'
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      VIRTUAL_PORT: 3000
+      LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
     networks:
       - default # settings to deploy with jwilder/nginx-proxy
 
